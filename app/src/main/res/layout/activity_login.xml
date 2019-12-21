@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/mulanbaru"
+    android:layout_height="match_parent"
+    tools:context=".register_login.RegisterActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/molt"
+        android:alpha="0.5"
+        android:scaleType="fitXY"/>
+
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:text="Sign In"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Lemail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/colorbluelight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:textColorHint="#fff"
+        android:layout_marginTop="50dp"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/colorAccent"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Lpassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:textColorHint="#fff"
+        android:layout_marginTop="8dp"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lemail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:textColor="@color/colorAccent"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/bg_button2"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lpassword"/>
+
+
+
+    <TextView
+                android:id="@+id/textRegister"
+                android:layout_width="210dp"
+                android:layout_height="21dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginBottom="159dp"
+                android:text="Don't have an account? Register"
+                android:textColor="#ffff"
+                app:layout_constraintTop_toBottomOf="@+id/Lpassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--      <RelativeLayout&ndash;&gt;-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="#E0E0D4"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.495"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.498">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="146dp"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginStart="83dp"-->
+    <!--            android:layout_marginTop="19dp"-->
+    <!--            android:layout_marginEnd="79dp"-->
+    <!--            android:layout_marginBottom="391dp"-->
+    <!--            android:src="@drawable/film_scroll_logo" />-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:id="@+id/Lemail"-->
+    <!--            android:layout_width="217dp"-->
+    <!--            android:layout_height="68dp"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginStart="45dp"-->
+    <!--            android:layout_marginTop="137dp"-->
+    <!--            android:layout_marginEnd="46dp"-->
+    <!--            android:layout_marginBottom="265dp"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/userEmail"-->
+    <!--                android:layout_width="182dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentStart="true"-->
+    <!--                android:layout_alignParentTop="true"-->
+    <!--                android:layout_alignParentEnd="true"-->
+    <!--                android:layout_marginStart="14dp"-->
+    <!--                android:layout_marginTop="12dp"-->
+    <!--                android:layout_marginEnd="16dp"-->
+    <!--                android:hint="Email" />-->
+
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:id="@+id/Lpassword"-->
+    <!--            android:layout_width="217dp"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginStart="45dp"-->
+    <!--            android:layout_marginTop="205dp"-->
+    <!--            android:layout_marginEnd="46dp"-->
+    <!--            android:layout_marginBottom="195dp"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/userPassword"-->
+    <!--                android:layout_width="193dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentStart="true"-->
+    <!--                android:layout_alignParentTop="true"-->
+    <!--                android:layout_alignParentEnd="true"-->
+    <!--                android:layout_marginStart="17dp"-->
+    <!--                android:layout_marginTop="12dp"-->
+    <!--                android:layout_marginEnd="21dp"-->
+    <!--                android:hint="Password"-->
+    <!--                android:inputType="textPassword" />-->
+
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/buttonLogin"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginStart="108dp"-->
+    <!--            android:layout_marginTop="325dp"-->
+    <!--            android:layout_marginEnd="112dp"-->
+    <!--            android:layout_marginBottom="97dp"-->
+    <!--            android:text="LOGIN"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textRegister"-->
+    <!--            android:layout_width="210dp"-->
+    <!--            android:layout_height="21dp"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginStart="52dp"-->
+    <!--            android:layout_marginTop="290dp"-->
+    <!--            android:layout_marginEnd="46dp"-->
+    <!--            android:layout_marginBottom="159dp"-->
+    <!--            android:text="Don't have an account? Register"-->
+    <!--            android:textColor="#050505"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--       -->
+
+    <!--    </RelativeLayout>-->

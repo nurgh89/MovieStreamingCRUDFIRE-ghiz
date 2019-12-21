@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MOLT</string>
+    <string name="logout">LOGOUT</string>
+    <string name="add_film">Add Film</string>
+</resources>
